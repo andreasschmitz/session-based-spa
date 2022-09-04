@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "spa-backend"
+version = "1.0.0"
+description = "Session-based backend for single-page application example"
+authors = ["Andreas Schmitz <andreas@wirbauen.digital>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.0"
+django-cors-headers = "^3.13.0"
+djangorestframework = "^3.13.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+flake8 = "^5.0.1"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 119
+target-version = ['py310']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+  | migrations
+)/
+'''
+
+[tool.isort]
+line_length = 119
+multi_line_output = 3
+include_trailing_comma = true
