@@ -1,10 +1,12 @@
 # Session-based Authentication & Single-page Applications
 
+This project tries to demonstrate, in multiple "scenarios", how single-page applications, session-based authentication and established CSRF protection mechanisms can be brought together without a lot of hassle.
+
 Unfortunately, it's quite common to find recommendations to use token-based authentication (e.g. JWTs) when building single-page web applications. Since there still isn't a good solution to store tokens without making them vulnerable to XSS attacks, this approach cannot be used in good conscience. One of the driving reasons to use token-based authentication instead of the established, more secure and well understood session-based authentication seems to be the extra complexity that comes from protecting against [Cross-site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf) attacks.
 
-This example project tries to demonstrate, in multiple "scenarios", how single-page applications, session-based authentication and established CSRF protection mechanisms can be brought together without a lot of hassle. This isn't a installable dependency. If you look into the code you will find out that you can simply set this up on your own. If you are looking for an opinionated solution for Django and React, check-out the [AI-Kit: Authentication](https://github.com/ambient-innovation/django-ai-kit-auth) project by my friends at [Ambient](https://ambient.digital).
+This isn't a installable dependency. If you look into the code you will find out that you can simply set this up on your own. If you are looking for an opinionated solution for Django and React, check-out the [AI-Kit: Authentication](https://github.com/ambient-innovation/django-ai-kit-auth) project by my friends at [Ambient](https://ambient.digital).
 
-This project is based on Django and React and was created for the DjangoCon EU 2022 talk [Everything you didn't want to know about Cross-site Request Forgery (CSRF) in Django](https://pretalx.evolutio.pt/djangocon-europe-2022/talk/LWJHYJ/).
+This project is based on Django and React and was created for the DjangoCon EU 2022 talk [Everything you didn't want to know about Cross-site Request Forgery (CSRF) in Django](https://pretalx.evolutio.pt/djangocon-europe-2022/talk/LWJHYJ/). You can find my blog post with furter information about the talk and a link to the recording here: [My DjangoCon Europe 2022 Talk About Cross-site Request Forgery](https://www.andreas.earth/s/djangocon-22).
 
 
 ## Setup & Requirements
