@@ -192,7 +192,6 @@ elif USED_CSRF_SCENARIO == Scenario.SCENARIO_4:
     FRONTEND_CROSS_SITE = False
     CSRF_TRUSTED_ORIGINS = ["http://web.example.org:3000", "http://api.example.org:8000"]
     CORS_ALLOWED_ORIGINS = ["http://web.example.org:3000"]
-    CSRF_COOKIE_DOMAIN = ".example.org"
 elif USED_CSRF_SCENARIO == Scenario.SCENARIO_5:
     CSRF_USE_SESSIONS = False
     FRONTEND_CROSS_SITE = True
