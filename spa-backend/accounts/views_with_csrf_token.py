@@ -46,7 +46,7 @@ class LoginAPIView(generics.GenericAPIView):
         serializer.is_valid(raise_exception=True)
 
         user = serializer.validated_data["user"]
-        # Cleans up previous sessions,rotates CSRF token and persists the user id in the session.
+        # Cleans up previous sessions, rotates CSRF token and persists the user id in the session.
         login(request, user)
 
         return get_user_csrf_response(request, user)
